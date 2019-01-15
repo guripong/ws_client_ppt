@@ -46,13 +46,13 @@ ws.on('message', function (message) {
 				console.log(`고른파일:`,pptfilename);
 
 				slideshowing = 1;
-				slideshow.boot().delay(100).then(function () {
+				slideshow.boot().then(function () {
 			
 					slideshow.open(pptfilename);
 				
-				}).delay(100).then(function () {
+				}).then(function () {
+
 					slideshow.start();
-		
 				});
 				ws.send('OPEN_succeed:'+pptfilename);
 			}
