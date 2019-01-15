@@ -1,0 +1,15 @@
+ppt 폴더안에 pptx 파일을 넣고
+알렉사한테 말합니다.
+
+alexa, ask power point open
+alexa, ask power point close
+alexa, ask power point next
+alexa, ask power point go next
+alexa, ask power point previous
+alexa, ask power point go previous
+alexa, ask power point before
+alexa, ask power point go before
+alexa, ask power point go [숫자]
+alexa, ask power point go to slide [숫자]
+alexa, ask power point go to number [숫자]
+
