@@ -33,11 +33,10 @@ ws.on('message', function (message) {
 
 			slideshow.boot().then(function (ok) {
 				console.log(`부트 성공:` + ok);
-				var isok = 0;
 				for (var i = 0; i < filelist.length; i++) {
 					if (filelist[i].split('.')[1] == 'pptx') {
 						pptfilename = './ppt/' + filelist[i];
-						isok = 1;
+						
 						break;
 					}
 					
@@ -68,7 +67,6 @@ ws.on('message', function (message) {
 	}
 
 	if (message == 'close') {
-
 		slideshow.close().then(function (ok) {
 			console.log('close slide succeed:', ok);
 			ws.send('answer_s_close'+ok);
